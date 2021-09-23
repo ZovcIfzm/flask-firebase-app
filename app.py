@@ -1,8 +1,7 @@
 from flask import Flask, request
-
 from firebase_admin import credentials, firestore, initialize_app
-app = Flask(__name__)
 
+app = Flask(__name__)
 cred = credentials.Certificate(
     'key.json')
 initialize_app(cred)
