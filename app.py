@@ -3,7 +3,7 @@ from firebase_admin import credentials, firestore, initialize_app
 
 app = Flask(__name__)
 cred = credentials.Certificate(
-    'priyen-key.json')
+    'firebaseConfig.json')
 initialize_app(cred)
 db = firestore.client()
 
